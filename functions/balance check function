@@ -69,3 +69,35 @@ def crntBalance():  #FUNCTION TO ALLOW USERS TO CHECK THEIR BALANCE.
                     continue
                             
 crntBalance()
+
+
+
+# MODIFICATIONS TO MAKE CODE RUN IN MAIN PROGRAM
+
+def crntBalance():    
+
+    while True:
+        print ('########################################### BALANCE CHECK #####################################################\n \n')
+        currency = str(input("What account balance would you like to check: \nType 'G' for GHS or 'D' for USD: ")).upper()
+        if currency == 'G':
+            currency = 'GHS'
+            break                    
+
+        elif currency == 'D':
+            currency = 'USD'
+            break
+
+        else:
+            print (' \n_______________________________________________________________________________\n  \n')
+            print("Invalid Input. Please Type 'G' for GHS or 'D' for USD")        
+            print (' \n_______________________________________________________________________________\n  \n')    
+            continue
+
+
+    availableBalance = userBalance[currency]
+    print (' \n_______________________________________________________________________________\n  \n')
+    print (('Your available '+ currency +' account balance is:\n \n').upper())
+    print (currency +' '+ str(availableBalance ))
+    print (' \n_______________________________________________________________________________\n  \n')
+  
+
