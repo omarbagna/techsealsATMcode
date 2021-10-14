@@ -52,3 +52,40 @@ def addOns():
     else:
         print("Invalid")
 addOns()
+
+
+def updatePin():
+        
+    #user inputs pin
+    print("A confirmation code has been sent to your phone")
+    
+    verificationCode = random.randint(1000,9999)
+
+    print(verificationCode)
+    
+    #after the user has been verified, he/she proceeds with the change
+    while True:
+        
+        codeVerify = int(input("Enter verification code here: "))
+        
+        if codeVerify == verificationCode:
+            while True:
+                newPin = int(getpass.getpass(" Enter new 4 digit pin: "))
+                newPinConfirm = int(getpass.getpass(" Please repeat new 4 digit pin: "))
+                
+                if newPin == newPinConfirm:
+                    print("Congratulations! Your pin has been changed!")
+                    session['pin'] = newPin
+                    pause = input('Press Enter to return to the main menu. ')
+                    break
+
+                elif newPin != newPinConfirm:
+                    print('Sorry Pin codes do not match. Please Try again.')
+                    continue
+            break
+
+        elif codeVerify != verificationCode:
+            print("Wrong Verification code entered. Please enter code again")
+            continue
+    
+    return
