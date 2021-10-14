@@ -23,3 +23,13 @@ The project was split into a total of six functions and shared among members to 
 ## def addOns()
 ### def updatePin(), def pinChangeRequest(), def momo(), def userlang()
 * This is the bonus additions funcction tackled by [Emmanuel Kwakye and Vanessa Ampofo Onyina]
+
+
+# PROGRAM IN ACTION
+
+## PROGRAM IN ENGLISH
+![ENGLISH CODE](/assets/images/ATMcodeEnglish.png)
+
+
+## PROGRAM IN TWI
+![TWI CODE](/assets/images/ATMcodeTwi.png)
