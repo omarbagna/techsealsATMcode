@@ -2,7 +2,7 @@ def crntBalance():  #FUNCTION TO ALLOW USERS TO CHECK THEIR BALANCE.
 
        
 
-                
+    #nice_code           
     #username = loginDetails['username']
     #crntBalance1=loginDetails['balance'][currency]
     
